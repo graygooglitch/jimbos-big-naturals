@@ -23,10 +23,12 @@ This mod does not require any modloaders or anything - installing it is very sim
 1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/tag/release">**Download BigNaturalsMod.zip** from the latest releases here</a>.
 2. **Navigate to your Balatro installation folder.** This is probably something like `C:\Program Files (x86)\Steam\steamapps\common\Balatro`.
 3. **Extract BigNaturalsMod.zip.** You should have a folder in your Balatro directory now.
-4. **Right click on `Balatro.exe` in your Balatro installation folder**. A reminder you'll need 7zip or similar for this. You may need to click "Show more options" on later versions of Windows. There should be a 7zip option:
+4. **Right click on `Balatro.exe` in your Balatro installation folder**. A reminder you'll need 7zip or similar for this. You may need to click "Show more options" on later versions of Windows. Under the options it should say 7zip. Hover over it to reveal some options.
 <img src="https://i.imgur.com/Z9TwkB8.png">
-5. Under this 7zip option, click **Open archive**.
+
+5. Under 7zip click **Open archive**.
 6. Go into the **BigNaturalsMod folder**. Grab the **resources** folder and drag it over into your 7zip window, as shown below.
+
 <img src="https://i.imgur.com/BC0oWfI.gif">
 
 That's it! If you'd like to uninstall the mod, the "original files backup" folder in BigNaturalsMod has a resources folder with the original jokers. Just repeat steps 4 through 6 with that folder instead.
