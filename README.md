@@ -10,7 +10,7 @@ It covers 121 of the 150 Jokers in Balatro. Other places where Joker imagery app
 
 I don't know. Sorry.
 
-## Is this mod SFW (for streaming purposes and whatnot)?
+## This mod is SFW?! (for streaming purposes and whatnot)
 
 That's right. No nipples are onscreen. The closest thing to anything scandalous is that Half Joker has a bare chest, but it's torn too badly so that it obscures anything of note. If you'd like to double check, you can open the various PNGs within the mod folder.
 
