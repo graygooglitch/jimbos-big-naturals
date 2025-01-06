@@ -4,6 +4,8 @@
 
 Jimbo's Big Naturals is a simple edit of Balatro's existing assets to give the jokers boobs. It is not intended to be a "gender swap" mod, though you may view it as making the jokers ladies if that pleases you. It is just the existing jokers, but now they have boobs. I made it myself using Aseprite.
 
+It covers 121 of the 150 Jokers in Balatro. Other places where Joker imagery appears (such as wax seals, booster packs, and the Wraith spectral card) are also affected.
+
 ## Why?
 
 I don't know. Sorry.
