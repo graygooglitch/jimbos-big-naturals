@@ -37,6 +37,8 @@ That's it! If you'd like to uninstall the mod, the "original files backup" folde
 
 ## Linux
 
+(credit to danvolchek for writing these, thank you so much!)
+
 1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
 2. There isn't a 7zip GUI for Linux, but this script does the same thing as the Windows steps. Edit the variables and run the following (you'll need the command line version of 7zip from your distro's package manager, e.g. `sudo pacman -S 7zip` for Arch):
     ```bash
@@ -54,6 +56,10 @@ That's it! If you'd like to uninstall the mod, the "original files backup" folde
 ## Mac
 
 I don't have experience with this platform, sorry :( Hopefully you can find some way to open the Balatro exe and follow the steps above.
+
+## Steamodder/Malverk
+
+For experienced Balatro modders, someone is currently working on a Big Naturals pack for Malverk (a texture pack manager for Steamodder). Stay tuned!
 
 # I want to look at the boobie jokers without downloading the mod. Can you put the art here?
 Sure can! **Spoilers for Balatro**, though - it's all the jokers in the game!
