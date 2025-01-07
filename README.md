@@ -22,7 +22,7 @@ This mod does not require any modloaders or anything - installing it is very sim
 
 ## Windows
 
-1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/tag/release">**Download BigNaturalsMod.zip** from the latest releases here</a>.
+1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
 2. **Navigate to your Balatro installation folder.** This is probably something like `C:\Program Files (x86)\Steam\steamapps\common\Balatro`.
 3. **Extract BigNaturalsMod.zip.** You should have a folder in your Balatro directory now.
 4. **Right click on `Balatro.exe` in your Balatro installation folder**. A reminder you'll need 7zip or similar for this. You may need to click "Show more options" on later versions of Windows. Under the options it should say 7zip. Hover over it to reveal some options.
@@ -35,9 +35,25 @@ This mod does not require any modloaders or anything - installing it is very sim
 
 That's it! If you'd like to uninstall the mod, the "original files backup" folder in BigNaturalsMod has a resources folder with the original jokers. Just repeat steps 4 through 6 with that folder instead.
 
-## Mac/Linux
+## Linux
 
-I don't have experience with these platforms, sorry :( Hopefully you can find some way to open the Balatro exe and follow the steps above.
+1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
+2. There isn't a 7zip GUI for Linux, but this script does the same thing as the Windows steps. Edit the variables and run the following (you'll need the command line version of 7zip from your distro's package manager, e.g. `sudo pacman -S 7zip` for Arch):
+    ```bash
+    #!/bin/bash
+    BIG_NATURALS_PATH=~/Downloads/BigNaturalsMod.zip # Or wherever you downloaded the release to
+    BALATRO_PATH=~/.local/share/Steam/steamapps/common/Balatro # Or wherever you have Balatro installed
+    INSTALL=true # Or false, if you want to uninstall the mod
+
+
+    rm -rf /tmp/big-naturals
+    7z x -o/tmp/big-naturals $BIG_NATURALS_PATH && 7z a $BALATRO_PATH/Balatro.exe "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
+    rm -rf /tmp/big-naturals
+    ```
+
+## Mac
+
+I don't have experience with this platform, sorry :( Hopefully you can find some way to open the Balatro exe and follow the steps above.
 
 # I want to look at the boobie jokers without downloading the mod. Can you put the art here?
 Sure can! **Spoilers for Balatro**, though - it's all the jokers in the game!
