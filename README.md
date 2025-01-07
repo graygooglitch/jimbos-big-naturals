@@ -20,7 +20,7 @@ This mod does not require any modloaders or anything - installing it is very sim
 
 **You will need 7zip**, or a program with similar capability to open non-zip files as zips. <a href="https://www.7-zip.org/">Download 7zip here.</a> Fortunately, 7zip is free open source zip software.
 
-## Windows
+## Windows/Steam
 
 1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
 2. **Navigate to your Balatro installation folder.** This is probably something like `C:\Program Files (x86)\Steam\steamapps\common\Balatro`.
@@ -35,7 +35,7 @@ This mod does not require any modloaders or anything - installing it is very sim
 
 That's it! If you'd like to uninstall the mod, the "original files backup" folder in BigNaturalsMod has a resources folder with the original jokers. Just repeat steps 4 through 6 with that folder instead.
 
-## Linux
+## Linux/Steam Deck
 
 (credit to danvolchek for writing these, thank you so much!)
 
@@ -52,6 +52,7 @@ That's it! If you'd like to uninstall the mod, the "original files backup" folde
     7z x -o/tmp/big-naturals $BIG_NATURALS_PATH && 7z a $BALATRO_PATH/Balatro.exe "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
     rm -rf /tmp/big-naturals
     ```
+For Steam Deck, bdjeffyp gave the following advice: "For those looking to do the install on the Steam Deck without Windows, the new install instructions for Linux should work well. I’d recommend copy/pasting the script into the terminal and updating the paths if needed."
 
 ## Mac
 
