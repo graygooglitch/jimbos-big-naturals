@@ -56,7 +56,20 @@ For Steam Deck, bdjeffyp gave the following advice: "For those looking to do the
 
 ## Mac
 
-I don't have experience with this platform, sorry :( Hopefully you can find some way to open the Balatro exe and follow the steps above.
+1. First, install Homebrew if you haven't already: https://docs.brew.sh/Installation
+2. Then install p7zip through Homebrew:
+    `brew install p7zip`
+3. Save and run the following script (make sure to do a `chmod +x SCRIPTNAME.sh` on it to make it executable):
+    ```
+    #!/bin/bash
+    BIG_NATURALS_PATH=~/Downloads/BigNaturalsMod.zip # Or wherever you downloaded the release to
+    BALATRO_PATH="${HOME}/Library/Application Support/Steam/steamapps/common/Balatro/Balatro.app/Contents/Resources/Balatro.love"
+    INSTALL=true # Or false, if you want to uninstall the mod
+    
+    rm -rf /tmp/big-naturals
+    7z x -o/tmp/big-naturals "$BIG_NATURALS_PATH" && 7z a "${BALATRO_PATH}" "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
+    rm -rf /tmp/big-naturals
+    ```
 
 ## Steamodder/Malverk
 
