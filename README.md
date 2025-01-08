@@ -72,6 +72,7 @@ For Steam Deck, bdjeffyp gave the following advice: "For those looking to do the
     7z x -o/tmp/big-naturals "$BIG_NATURALS_PATH" && 7z a "${BALATRO_PATH}" "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
     rm -rf /tmp/big-naturals
     ```
+If you have trouble getting it to work e.g. on older Mac versions, try opening bash and copy pasting the script in or running it one line one at a time. This information was contributed by stovepiperat! Thank you!
 
 ## Steamodder/Malverk
 
