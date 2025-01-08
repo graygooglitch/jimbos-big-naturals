@@ -56,6 +56,8 @@ For Steam Deck, bdjeffyp gave the following advice: "For those looking to do the
 
 ## Mac
 
+(credit to sonololo for writing these, thank you!!!)
+
 1. First, install Homebrew if you haven't already: https://docs.brew.sh/Installation
 2. Then install p7zip through Homebrew:
     `brew install p7zip`
