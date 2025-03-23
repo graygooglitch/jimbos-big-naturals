@@ -1,0 +1,14 @@
+{
+	"id": "JimbosBigNaturals",
+	"name": "Jimbos Big Naturals",
+	"display_name": "Jimbos Big Naturals",
+	"author": ["prettypinkpansy"],
+	"description": "Give Jimbo so lovely big naturals",
+	"prefix": "jbn",
+	"main_file": "main.lua",
+	"priority": 0,
+	"badge_colour": "",
+	"badge_text_colour": "",
+	"version": "1.0.0",
+	"dependencies": []
+}

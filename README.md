@@ -16,67 +16,7 @@ That's right. No nipples are onscreen. The closest thing to anything scandalous 
 
 # Installation
 
-This mod does not require any modloaders or anything - installing it is very simple. It's just a zip, some folders, and some PNG files (images). Balatro is built on a simple platform, and so you can open its EXE file like a ZIP file to view its internal files... and replace them too! That's how the mod is installed.
-
-**You will need 7zip**, or a program with similar capability to open non-zip files as zips. <a href="https://www.7-zip.org/">Download 7zip here.</a> Fortunately, 7zip is free open source zip software.
-
-## Windows/Steam
-
-1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
-2. **Navigate to your Balatro installation folder.** This is probably something like `C:\Program Files (x86)\Steam\steamapps\common\Balatro`.
-3. **Extract BigNaturalsMod.zip.** You should have a folder in your Balatro directory now.
-4. **Right click on `Balatro.exe` in your Balatro installation folder**. A reminder you'll need 7zip or similar for this. You may need to click "Show more options" on later versions of Windows. Under the options it should say 7zip. Hover over it to reveal some options.
-<img src="https://i.imgur.com/Z9TwkB8.png">
-
-5. Under 7zip click **Open archive**.
-6. Go into the **BigNaturalsMod folder**. Grab the **resources** folder and drag it over into your 7zip window, as shown below.
-
-<img src="https://i.imgur.com/BC0oWfI.gif">
-
-That's it! If you'd like to uninstall the mod, the "original files backup" folder in BigNaturalsMod has a resources folder with the original jokers. Just repeat steps 4 through 6 with that folder instead.
-
-## Linux/Steam Deck
-
-(credit to danvolchek for writing these, thank you so much!)
-
-1. <a href="https://github.com/prettypinkpansy/jimbos-big-naturals/releases/latest">**Download BigNaturalsMod.zip** from the latest releases here</a>.
-2. There isn't a 7zip GUI for Linux, but this script does the same thing as the Windows steps. Edit the variables and run the following (you'll need the command line version of 7zip from your distro's package manager, e.g. `sudo pacman -S 7zip` for Arch):
-    ```bash
-    #!/bin/bash
-    BIG_NATURALS_PATH=~/Downloads/BigNaturalsMod.zip # Or wherever you downloaded the release to
-    BALATRO_PATH=~/.local/share/Steam/steamapps/common/Balatro # Or wherever you have Balatro installed
-    INSTALL=true # Or false, if you want to uninstall the mod
-
-
-    rm -rf /tmp/big-naturals
-    7z x -o/tmp/big-naturals $BIG_NATURALS_PATH && 7z a $BALATRO_PATH/Balatro.exe "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
-    rm -rf /tmp/big-naturals
-    ```
-For Steam Deck, bdjeffyp gave the following advice: "For those looking to do the install on the Steam Deck without Windows, the new install instructions for Linux should work well. I’d recommend copy/pasting the script into the terminal and updating the paths if needed."
-
-## Mac
-
-(credit to sonololo for writing these, thank you!!!)
-
-1. First, install Homebrew if you haven't already: https://docs.brew.sh/Installation
-2. Then install p7zip through Homebrew:
-    `brew install p7zip`
-3. Save and run the following script (make sure to do a `chmod +x SCRIPTNAME.sh` on it to make it executable):
-    ```
-    #!/bin/bash
-    BIG_NATURALS_PATH=~/Downloads/BigNaturalsMod.zip # Or wherever you downloaded the release to
-    BALATRO_PATH="${HOME}/Library/Application Support/Steam/steamapps/common/Balatro/Balatro.app/Contents/Resources/Balatro.love"
-    INSTALL=true # Or false, if you want to uninstall the mod
-    
-    rm -rf /tmp/big-naturals
-    7z x -o/tmp/big-naturals "$BIG_NATURALS_PATH" && 7z a "${BALATRO_PATH}" "/tmp/big-naturals/BigNaturalsMod$(if test \"$INSTALL\" != \"true\"; then echo '/original files backup'; fi)/resources"
-    rm -rf /tmp/big-naturals
-    ```
-If you have trouble getting it to work e.g. on older Mac versions, try opening bash and copy pasting the script in or running it one line one at a time. This information was contributed by stovepiperat! Thank you!
-
-## Steamodder/Malverk
-
-For experienced Balatro modders, someone is currently working on a Big Naturals pack for Malverk (a texture pack manager for Steamodder). Stay tuned!
+This fork has been adapted for Malverk using smods. Follow the instructions for installing smods, malverk, and place the release into the mods folder in %appdata%\balatro\mods.
 
 # I want to look at the boobie jokers without downloading the mod. Can you put the art here?
 Sure can! **Spoilers for Balatro**, though - it's all the jokers in the game!
@@ -88,4 +28,4 @@ Sure can! **Spoilers for Balatro**, though - it's all the jokers in the game!
 </details>
 As of 2.0, there are also some additional touches. The wax seals, for instance, which feature jokers, have big naturals as well.
 
-That's it! Thanks for checking this out! If you have any questions, comments, concerns, bug reports or bug facts, hit me up on <a href="https://bsky.app/profile/prettypinkpansy.bsky.social">Bluesky</a>.
+That's it! Thanks for checking this out! If you have any questions, comments, concerns, bug reports or bug facts, hit me up on <a href="https://bsky.app/profile/prettypinkpansy.bsky.social">Bluesky</a>. For issues with the Malverk version, please file a bug report on the repo.
